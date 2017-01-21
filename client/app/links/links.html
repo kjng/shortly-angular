@@ -1,13 +1,12 @@
 <div id='container'>
   <div class='navigation'>
     <ul>
-      <li><a href='/links'>All Links</a></li>
-      <li><a href='/shorten'>Shorten</a></li>
+      <li><a href='#/links'>All Links</a></li>
+      <li><a href='#/shorten'>Shorten</a></li>
     </ul>
-    <a href='/logout'>Logout</a>
   </div>
   <div class='link' ng-repeat="link in data.links">
-    <img src='../../client/assets/redirect_icon.png' />
+    <img src='/assets/redirect_icon.png'/>
     <div class='info'>
       <div class='visits'>
         <span class='count'>{{link.visits}}</span> Visits
