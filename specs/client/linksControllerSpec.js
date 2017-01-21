@@ -1,7 +1,11 @@
 'use strict';
 
 describe('LinksController', function () {
-  var $scope, $rootScope, createController, Links, $httpBackend;
+  var $scope;
+  var $rootScope;
+  var createController;
+  var Links;
+  var $httpBackend;
 
   // using angular mocks, we can inject the injector
   // to retrieve our dependencies
