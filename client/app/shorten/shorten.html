@@ -7,10 +7,9 @@
     </ul>
   </div>
   <div class='creator'>
-    <form>
-      <input class='text' type='text' name='url' ng-model='url'>
-      <input type='submit' value='Shorten' ng-click='addLink()'>
+    <form name='linkForm' ng-submit='addLink()' novalidate>
+      <input class='text' type='url' ng-model='url' required />
+      <input type='submit' value='Shorten' ng-disabled='linkForm.$invalid' />
     </form>
-    <img class='spinner' src='/assets/spiffygif_46x46.gif'>
   </div>
 </div>
