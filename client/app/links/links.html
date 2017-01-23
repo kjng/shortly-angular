@@ -6,7 +6,8 @@
       <!-- <li><a href='#'>Log Out</a></li> -->
     </ul>
   </div>
-  <div class='link' ng-repeat="link in data.links">
+  <input type='text' ng-model='search' placeholder='Filter by...' />
+  <div class='link' ng-repeat="link in data.links | filter:search | orderBy:'created_at'">
     <img src='/assets/redirect_icon.png'/>
     <div class='info'>
       <div class='visits'>
