@@ -26,8 +26,7 @@ angular.module('shortly', [
       authenticate: true
     })
     .otherwise({
-      templateUrl: '/app/auth/signin.html',
-      controller: 'AuthController',
+      redirectTo: '/links'
     });
 
     // We add our $httpInterceptor into the array
